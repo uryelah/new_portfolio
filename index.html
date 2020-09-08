@@ -7,24 +7,24 @@
   <link rel="stylesheet" href="./normalize.css">
   <link rel="stylesheet" href="./style.css">
   <script src="https://kit.fontawesome.com/bc4d064067.js" crossorigin="anonymous"></script>
-  <title>Sarah Chamorro</title>
+  <title>S.Chamorro</title>
 </head>
 
 <body>
   <div id="modal" class="modal hide">
     <div class="item-top">
-      <h2 data-item="true" class="item-title">Item title</h2>
-      <ul data-item="true" class="item-subtitle">
+      <h2 id="modal-title" data-item="true" class="item-title">Item title</h2>
+      <ul id="modal-subtitle" data-item="true" class="item-subtitle">
         <li data-item="true">Company</li>
         <li data-item="true">Stack info</li>
         <li data-item="true">Year</li>
       </ul>
     </div>
     <figure data-item="true" class="item-img">
-      <img data-item="true" src="https://usabilla.com/blog/wp-content/uploads/2015/07/Website-Design-new.jpg" />
+      <img id="modal-img" data-item="true" src="https://usabilla.com/blog/wp-content/uploads/2015/07/Website-Design-new.jpg" />
     </figure>
     <div data-item="true" class="item-desc">
-      <p data-item="true" class="item-description">
+      <p id="modal-desc" data-item="true" class="item-description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eos ab impedit, vero perspiciatis aliquid
         doloribus laboriosam libero vitae quos doloremque odio eius repudiandae, at facere molestias architecto,
         obcaecati incidunt?
@@ -33,21 +33,21 @@
         obcaecati incidunt?
       </p>
       <div class="item-side">
-        <ul data-item="true" class="item-tags">
+        <ul id="modal-stack" data-item="true" class="item-tags">
           <li data-item="true" class="tag">html</li>
           <li data-item="true" class="tag">javascript</li>
           <li data-item="true" class="tag">css</li>
         </ul>
-        <hr/>
+        <hr />
         <div class="item-links">
-          <button data-item="true" class="item-btn" type="button">
+          <a id="modal-live" target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn" href="https://uryelah.github.io/ao-kanji/">
             <span>See live</span>
             <i class="fas fa-external-link-alt"></i>
-          </button>
-          <button data-item="true" class="item-btn" type="button">
+          </a>
+          <a id="modal-repo" target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn" href="https://uryelah.github.io/ao-kanji/">
             <span>See source</span>
             <i class="fab fa-github"></i>
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@
     <nav class="nav" id="nav">
       <ul class="nav-links">
         <li class="nav-link">
-          <a class="nav-logo" href="#">My Logo</a>
+          <a class="nav-logo" href="#">S.Chamorro</a>
         </li>
         <li class="list-padding">
 
@@ -162,37 +162,46 @@
             Glad to see you!
           </h1>
           <p class="header-body">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus placeat qui ad vel molestiae facilis
-            temporibus sit esse ratione, officia omnis ipsam reprehenderit blanditiis possimus ea praesentium ab.
-            Itaque,
-            repellendus!
+            <span>
+              I enjoy building interactive interfaces with Javascript + frameworks as a certified Ruby on Rails and
+              React web developer.
+            </span>
+            <span>
+              I’m currently completing a degree in Computer Science and am exploring front-end remote opportunities with
+              digital-product teams.
+            </span>
+            <span>
+              I’m also a Technical Support Engineer and mentor at Microverse, and a freelancing as a full-stack
+              developer building solutions for medium-sized businesses using ReactJS and Firebase.
+            </span>
           </p>
         </main>
         <aside>
           <p class="uppercase--blue">Let's connect</p>
           <ul class="social-links">
             <li class="social-link">
-              <a href="#">
+              <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/sarah_chamorro">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li class="social-link">
-              <a href="#">
+              <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/uryelah/">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </li>
             <li class="social-link">
-              <a href="#">
+              <a target="_blank" rel="noopener noreferrer"
+                href="https://medium.com/@sarahchamorro/level-up-your-css-game-today-making-a-game-with-no-javascript-d21fea6756e6">
                 <i class="fab fa-medium-m"></i>
               </a>
             </li>
             <li class="social-link">
-              <a href="#">
+              <a target="_blank" rel="noopener noreferrer" href="https://github.com/uryelah">
                 <i class="fab fa-github-alt"></i>
               </a>
             </li>
             <li class="social-link">
-              <a href="#">
+              <a target="_blank" rel="noopener noreferrer" href="https://angel.co/u/sarah-chamorro">
                 <i class="fab fa-angellist"></i>
               </a>
             </li>
@@ -202,108 +211,147 @@
     </section>
     <section id="portfolio" class="section section--vertical section--transparent">
       <h2 class="hidden">Portfolio</h2>
-      <article data-item="true" class="item">
-        <figure data-item="true" class="item-img">
-          <img data-item="true" src="https://usabilla.com/blog/wp-content/uploads/2015/07/Website-Design-new.jpg" />
+      <article id="project-1" data-item="aoKanji" class="item">
+        <figure data-item="aoKanji" class="item-img">
+          <img data-item="aoKanji" src="./imgs/01.png" />
         </figure>
-        <div data-item="true" class="item-desc">
-          <h2 data-item="true" class="item-title">Item title</h2>
-          <ul data-item="true" class="item-subtitle">
-            <li data-item="true">Company</li>
-            <li data-item="true">Stack info</li>
-            <li data-item="true">Year</li>
+        <div data-item="aoKanji" class="item-desc">
+          <h2 data-item="aoKanji" class="item-title">Ao Kanji</h2>
+          <ul data-item="aoKanji" class="item-subtitle">
+            <li data-item="aoKanji">Microverse</li>
+            <li data-item="aoKanji">React</li>
+            <li data-item="aoKanji">2020</li>
           </ul>
-          <p data-item="true" class="item-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eos ab impedit, vero perspiciatis aliquid
-            doloribus laboriosam libero vitae quos doloremque odio eius repudiandae, at facere molestias architecto,
-            obcaecati incidunt?
+          <p data-item="aoKanji" class="item-description">
+            A Kanji mobile-first study catalog web-app that, by consuming the Japanse kanji API, enables students to select groups of Kanji by grade or work book lists and access their readings, stroke order, and pronunciation. 
           </p>
-          <ul data-item="true" class="item-tags">
-            <li data-item="true" class="tag">html</li>
-            <li data-item="true" class="tag">javascript</li>
-            <li data-item="true" class="tag">css</li>
+          <ul data-item="aoKanji" class="item-tags">
+            <li data-item="aoKanji" class="tag">React</li>
+            <li data-item="aoKanji" class="tag">Redux</li>
+            <li data-item="aoKanji" class="tag">Webpack</li>
           </ul>
-          <a data-item="true" class="item-btn" href="#button">
+          <a target="_blank" rel="noopener noreferrer" data-item="aoKanji" class="item-btn" href="https://uryelah.github.io/ao-kanji/">
             See Project
           </a>
         </div>
       </article>
-      <article data-item="true" class="item">
-        <figure data-item="true" class="item-img">
-          <img data-item="true" src="https://usabilla.com/blog/wp-content/uploads/2015/07/Website-Design-new.jpg" />
+      <article id="project-2" data-item="circle" class="item">
+        <figure data-item="circle" class="item-img">
+          <img data-item="circle" src="./imgs/02.png" />
         </figure>
-        <div data-item="true" class="item-desc">
-          <h2 data-item="true" class="item-title">Item title</h2>
-          <ul data-item="true" class="item-subtitle">
-            <li data-item="true">Company</li>
-            <li data-item="true">Stack info</li>
-            <li data-item="true">Year</li>
+        <div data-item="circle" class="item-desc">
+          <h2 data-item="circle" class="item-title">Circle</h2>
+          <ul data-item="circle" class="item-subtitle">
+            <li data-item="circle">Microverse</li>
+            <li data-item="circle">Rails & React</li>
+            <li data-item="circle">2020</li>
           </ul>
-          <p data-item="true" class="item-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eos ab impedit, vero perspiciatis aliquid
-            doloribus laboriosam libero vitae quos doloremque odio eius repudiandae, at facere molestias architecto,
-            obcaecati incidunt?
-          </p>
-          <ul data-item="true" class="item-tags">
-            <li data-item="true" class="tag">html</li>
-            <li data-item="true" class="tag">javascript</li>
-            <li data-item="true" class="tag">css</li>
+          <p data-item="circle" class="item-description">
+            A mobile-first SPA Rails and React web-app for remote meetups that let users create, favorite, and browse a catalog of meetings and groups. The API was built with Rails and the client with React and Redux.           </p>
+          <ul data-item="circle" class="item-tags">
+            <li data-item="circle" class="tag">Rails</li>
+            <li data-item="circle" class="tag">React</li>
+            <li data-item="circle" class="tag">Redux</li>
           </ul>
-          <button data-item="true" class="item-btn" type="button">
+          <a target="_blank" rel="noopener noreferrer" data-item="circle" class="item-btn" href="https://hosting-test-29639.firebaseapp.com/">
             See Project
-          </button>
+          </a>
         </div>
       </article>
-      <article data-item="true" class="item">
-        <figure data-item="true" class="item-img">
-          <img data-item="true" src="https://usabilla.com/blog/wp-content/uploads/2015/07/Website-Design-new.jpg" />
+      <article id="project-1" data-item="aoKanji" class="item">
+        <figure data-item="aoKanji" class="item-img">
+          <img data-item="aoKanji" src="./imgs/01.png" />
         </figure>
-        <div data-item="true" class="item-desc">
-          <h2 data-item="true" class="item-title">Item title</h2>
-          <ul data-item="true" class="item-subtitle">
-            <li data-item="true">Company</li>
-            <li data-item="true">Stack info</li>
-            <li data-item="true">Year</li>
+        <div data-item="aoKanji" class="item-desc">
+          <h2 data-item="aoKanji" class="item-title">Ao Kanji</h2>
+          <ul data-item="aoKanji" class="item-subtitle">
+            <li data-item="aoKanji">Microverse</li>
+            <li data-item="aoKanji">React</li>
+            <li data-item="aoKanji">2020</li>
           </ul>
-          <p data-item="true" class="item-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eos ab impedit, vero perspiciatis aliquid
-            doloribus laboriosam libero vitae quos doloremque odio eius repudiandae, at facere molestias architecto,
-            obcaecati incidunt?
+          <p data-item="aoKanji" class="item-description">
+            A Kanji mobile-first study catalog web-app that, by consuming the Japanse kanji API, enables students to select groups of Kanji by grade or work book lists and access their readings, stroke order, and pronunciation. 
           </p>
-          <ul data-item="true" class="item-tags">
-            <li data-item="true" class="tag">html</li>
-            <li data-item="true" class="tag">javascript</li>
-            <li data-item="true" class="tag">css</li>
+          <ul data-item="aoKanji" class="item-tags">
+            <li data-item="aoKanji" class="tag">React</li>
+            <li data-item="aoKanji" class="tag">Redux</li>
+            <li data-item="aoKanji" class="tag">Webpack</li>
           </ul>
-          <button data-item="true" class="item-btn" type="button">
+          <a target="_blank" rel="noopener noreferrer" data-item="aoKanji" class="item-btn" href="https://uryelah.github.io/ao-kanji/">
             See Project
-          </button>
+          </a>
         </div>
       </article>
-      <article data-item="true" class="item">
-        <figure data-item="true" class="item-img">
-          <img data-item="true" src="https://usabilla.com/blog/wp-content/uploads/2015/07/Website-Design-new.jpg" />
+      <article id="project-1" data-item="aoKanji" class="item">
+        <figure data-item="aoKanji" class="item-img">
+          <img data-item="aoKanji" src="./imgs/01.png" />
         </figure>
-        <div data-item="true" class="item-desc">
-          <h2 data-item="true" class="item-title">Item title</h2>
-          <ul data-item="true" class="item-subtitle">
-            <li data-item="true">Company</li>
-            <li data-item="true">Stack info</li>
-            <li data-item="true">Year</li>
+        <div data-item="aoKanji" class="item-desc">
+          <h2 data-item="aoKanji" class="item-title">Ao Kanji</h2>
+          <ul data-item="aoKanji" class="item-subtitle">
+            <li data-item="aoKanji">Microverse</li>
+            <li data-item="aoKanji">React</li>
+            <li data-item="aoKanji">2020</li>
           </ul>
-          <p data-item="true" class="item-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam eos ab impedit, vero perspiciatis aliquid
-            doloribus laboriosam libero vitae quos doloremque odio eius repudiandae, at facere molestias architecto,
-            obcaecati incidunt?
+          <p data-item="aoKanji" class="item-description">
+            A Kanji mobile-first study catalog web-app that, by consuming the Japanse kanji API, enables students to select groups of Kanji by grade or work book lists and access their readings, stroke order, and pronunciation. 
           </p>
-          <ul data-item="true" class="item-tags">
-            <li data-item="true" class="tag">html</li>
-            <li data-item="true" class="tag">javascript</li>
-            <li data-item="true" class="tag">css</li>
+          <ul data-item="aoKanji" class="item-tags">
+            <li data-item="aoKanji" class="tag">React</li>
+            <li data-item="aoKanji" class="tag">Redux</li>
+            <li data-item="aoKanji" class="tag">Webpack</li>
           </ul>
-          <button data-item="true" class="item-btn" type="button">
+          <a target="_blank" rel="noopener noreferrer" data-item="aoKanji" class="item-btn" href="https://uryelah.github.io/ao-kanji/">
             See Project
-          </button>
+          </a>
+        </div>
+      </article>
+      <article id="project-1" data-item="aoKanji" class="item">
+        <figure data-item="aoKanji" class="item-img">
+          <img data-item="aoKanji" src="./imgs/01.png" />
+        </figure>
+        <div data-item="aoKanji" class="item-desc">
+          <h2 data-item="aoKanji" class="item-title">Ao Kanji</h2>
+          <ul data-item="aoKanji" class="item-subtitle">
+            <li data-item="aoKanji">Microverse</li>
+            <li data-item="aoKanji">React</li>
+            <li data-item="aoKanji">2020</li>
+          </ul>
+          <p data-item="aoKanji" class="item-description">
+            A Kanji mobile-first study catalog web-app that, by consuming the Japanse kanji API, enables students to select groups of Kanji by grade or work book lists and access their readings, stroke order, and pronunciation. 
+          </p>
+          <ul data-item="aoKanji" class="item-tags">
+            <li data-item="aoKanji" class="tag">React</li>
+            <li data-item="aoKanji" class="tag">Redux</li>
+            <li data-item="aoKanji" class="tag">Webpack</li>
+          </ul>
+          <a target="_blank" rel="noopener noreferrer" data-item="aoKanji" class="item-btn" href="https://uryelah.github.io/ao-kanji/">
+            See Project
+          </a>
+        </div>
+      </article>
+      <article id="project-1" data-item="aoKanji" class="item">
+        <figure data-item="aoKanji" class="item-img">
+          <img data-item="aoKanji" src="./imgs/01.png" />
+        </figure>
+        <div data-item="aoKanji" class="item-desc">
+          <h2 data-item="aoKanji" class="item-title">Ao Kanji</h2>
+          <ul data-item="aoKanji" class="item-subtitle">
+            <li data-item="aoKanji">Microverse</li>
+            <li data-item="aoKanji">React</li>
+            <li data-item="aoKanji">2020</li>
+          </ul>
+          <p data-item="aoKanji" class="item-description">
+            A Kanji mobile-first study catalog web-app that, by consuming the Japanse kanji API, enables students to select groups of Kanji by grade or work book lists and access their readings, stroke order, and pronunciation. 
+          </p>
+          <ul data-item="aoKanji" class="item-tags">
+            <li data-item="aoKanji" class="tag">React</li>
+            <li data-item="aoKanji" class="tag">Redux</li>
+            <li data-item="aoKanji" class="tag">Webpack</li>
+          </ul>
+          <a target="_blank" rel="noopener noreferrer" data-item="aoKanji" class="item-btn" href="https://uryelah.github.io/ao-kanji/">
+            See Project
+          </a>
         </div>
       </article>
     </section>
@@ -311,41 +359,47 @@
       <article class="about">
         <div class="about-description">
           <h2>About Myself</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque consequuntur neque fugit quia ullam magni
-            adipisci dicta! Accusamus illum doloremque dolor modi nemo corrupti earum mollitia quis velit, delectus
-            quaerat?</p>
+          <p>
+            I'm a certified full-stack developer (@Microverse) with a B.A. in Design and experience in UX and Customer Success.
+            Currently continuing my Computer Science education (@Cruziero do Sul Virtual).
+            <br/>
+            <br/>
+            I have a passion for problem-solving, and a knack for debugging, and love to learn new tools and technologies.
+            <br/>
+            </p>
           <aside>
             <p class="uppercase--blue">Let's connect</p>
             <ul class="social-links">
               <li class="social-link">
-                <a href="#">
+                <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/sarah_chamorro">
                   <i class="fab fa-twitter"></i>
                 </a>
               </li>
               <li class="social-link">
-                <a href="#">
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/uryelah/">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
               </li>
               <li class="social-link">
-                <a href="#">
+                <a target="_blank" rel="noopener noreferrer"
+                  href="https://medium.com/@sarahchamorro/level-up-your-css-game-today-making-a-game-with-no-javascript-d21fea6756e6">
                   <i class="fab fa-medium-m"></i>
                 </a>
               </li>
               <li class="social-link">
-                <a href="#">
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/uryelah">
                   <i class="fab fa-github-alt"></i>
                 </a>
               </li>
               <li class="social-link">
-                <a href="#">
+                <a target="_blank" rel="noopener noreferrer" href="https://angel.co/u/sarah-chamorro">
                   <i class="fab fa-angellist"></i>
                 </a>
               </li>
             </ul>
-            <button class="item-btn" type="button">
+            <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/1Kw8gHHLybQsuuwY2n4BATHhianJe_OkjNmsrm1lEhis/edit?usp=sharing" class="item-btn">
               Get My Resume
-            </button>
+            </a>
           </aside>
         </div>
       </article>
@@ -364,12 +418,16 @@
               <p>JavaScript</p>
             </div>
             <div class="content-item">
-              <img src="https://miro.medium.com/max/2560/1*UvWOnSlWP7AbbOtSVUeHMg.png" class="content-icon" />
-              <p>JavaScript</p>
+              <img src="https://icons-for-free.com/iconfiles/png/512/icon++html+icon-1320194800994962643.png" class="content-icon" />
+              <p>HTML5</p>
             </div>
             <div class="content-item">
-              <img src="https://miro.medium.com/max/2560/1*UvWOnSlWP7AbbOtSVUeHMg.png" class="content-icon" />
-              <p>JavaScript</p>
+              <img src="https://i0.wp.com/www.tutorialwebdesign.com.br/wp-content/uploads/2015/07/css3.jpg?fit=250%2C237" class="content-icon" />
+              <p>CSS3</p>
+            </div>
+            <div class="content-item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSZc936X7NVC1GjyOg5tvp_8lJYSLNv2pLpNw&usqp=CAU" class="content-icon" />
+              <p>Ruby</p>
             </div>
           </div>
         </label>
@@ -378,16 +436,20 @@
           <i class="arrow fas fa-chevron-right"></i>
           <div class="content">
             <div class="content-item">
-              <img src="https://miro.medium.com/max/2560/1*UvWOnSlWP7AbbOtSVUeHMg.png" class="content-icon" />
-              <p>JavaScript</p>
+              <img src="https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png" class="content-icon" />
+              <p>React</p>
             </div>
             <div class="content-item">
-              <img src="https://miro.medium.com/max/2560/1*UvWOnSlWP7AbbOtSVUeHMg.png" class="content-icon" />
-              <p>JavaScript</p>
+              <img src="https://p.kindpng.com/picc/s/25-255448_ruby-on-rails-logo-graphic-design-hd-png.png" class="content-icon" />
+              <p>Rails</p>
             </div>
             <div class="content-item">
-              <img src="https://miro.medium.com/max/2560/1*UvWOnSlWP7AbbOtSVUeHMg.png" class="content-icon" />
-              <p>JavaScript</p>
+              <img src="https://firebase.google.com/images/brand-guidelines/logo-logomark.png" class="content-icon" />
+              <p>Firebase</p>
+            </div>
+            <div class="content-item">
+              <img src="https://w7.pngwing.com/pngs/780/57/png-transparent-node-js-javascript-database-mongodb-native-miscellaneous-text-trademark.png" class="content-icon" />
+              <p>NodeJs</p>
             </div>
           </div>
         </label>
@@ -396,16 +458,24 @@
           <i class="arrow fas fa-chevron-right"></i>
           <div class="content">
             <div class="content-item">
-              <img src="https://miro.medium.com/max/2560/1*UvWOnSlWP7AbbOtSVUeHMg.png" class="content-icon" />
-              <p>JavaScript</p>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQi5Xoq9eSa90UxHOOk1Y2xuzRPJ8BeX8CPRg&usqp=CAU" class="content-icon" />
+              <p>Git</p>
             </div>
             <div class="content-item">
-              <img src="https://miro.medium.com/max/2560/1*UvWOnSlWP7AbbOtSVUeHMg.png" class="content-icon" />
-              <p>JavaScript</p>
+              <img src="https://webpack.js.org/dcd5e077cf9f54ebe52d4f7ebe8c3080.png" class="content-icon" />
+              <p>Webpack</p>
             </div>
             <div class="content-item">
-              <img src="https://miro.medium.com/max/2560/1*UvWOnSlWP7AbbOtSVUeHMg.png" class="content-icon" />
-              <p>JavaScript</p>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRcapC8q1mMPefb3NUdQu7Q4Jhg1xllu5gqkg&usqp=CAU" class="content-icon" />
+              <p>Jest</p>
+            </div>
+            <div class="content-item">
+              <img src="https://rspec.info/images/logo_ogp.png" class="content-icon" />
+              <p>Rspec</p>
+            </div>
+            <div class="content-item">
+              <img src="https://miro.medium.com/max/3840/1*wsG43wOOFexWg_xa0CEhuQ.jpeg" class="content-icon" />
+              <p>PostgreSQL</p>
             </div>
           </div>
         </label>
@@ -416,10 +486,9 @@
       <p>If you have an application you are interested in developing, a feature that you need built or a project that
         needs coding. I'd love to help with it.</p>
       <form action="https://formspree.io/xayprjkg" method="POST">
-        <input required type="text" name="name">
-        <input required type="email" name="_replyto">
+        <input required placeholder="name"="text" name="name">
+        <input required placeholder="email" type="email" name="_replyto">
         <textarea required placeholder="Write your message here">
-
         </textarea>
         <input class="item-btn" type="submit" value="Get in Touch">
       </form>
@@ -436,20 +505,28 @@
           </svg>
         </div>
         <div class="element-6">
-          <svg class="straight" width="109" height="65" viewBox="0 0 109 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="0.592773" y="42.2793" width="107.204" height="24.699" transform="rotate(-23.1765 0.592773 42.2793)" fill="#7F8CFF"/>
+          <svg class="straight" width="109" height="65" viewBox="0 0 109 65" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.592773" y="42.2793" width="107.204" height="24.699" transform="rotate(-23.1765 0.592773 42.2793)"
+              fill="#7F8CFF" />
           </svg>
-          <svg class="round" width="121" height="123" viewBox="0 0 121 123" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M120.696 32.8419C115.725 24.0178 108.746 16.4883 100.324 10.8631C91.9013 5.23791 82.2727 1.67518 72.2174 0.463359C62.1621 -0.748462 51.9628 0.424689 42.4452 3.88782C32.9276 7.35096 24.3594 13.0067 17.4342 20.3972C10.509 27.7877 5.42148 36.7051 2.58365 46.4275C-0.254168 56.1498 -0.762569 66.4038 1.09962 76.3592C2.9618 86.3146 7.14223 95.6916 13.3024 103.731C19.4626 111.77 27.4294 118.246 36.5577 122.633L48.5813 97.6185C43.3809 95.1189 38.8422 91.4297 35.3328 86.8498C31.8233 82.2698 29.4418 76.9278 28.3809 71.2562C27.32 65.5846 27.6096 59.7429 29.2263 54.2041C30.843 48.6653 33.7414 43.585 37.6866 39.3747C41.6319 35.1643 46.5133 31.9423 51.9354 29.9693C57.3576 27.9964 63.1681 27.328 68.8966 28.0184C74.6251 28.7088 80.1105 30.7385 84.9087 33.9431C89.7068 37.1478 93.6829 41.4373 96.5149 46.4644L120.696 32.8419Z" fill="white"/>
-          </svg>  
+          <svg class="round" width="121" height="123" viewBox="0 0 121 123" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M120.696 32.8419C115.725 24.0178 108.746 16.4883 100.324 10.8631C91.9013 5.23791 82.2727 1.67518 72.2174 0.463359C62.1621 -0.748462 51.9628 0.424689 42.4452 3.88782C32.9276 7.35096 24.3594 13.0067 17.4342 20.3972C10.509 27.7877 5.42148 36.7051 2.58365 46.4275C-0.254168 56.1498 -0.762569 66.4038 1.09962 76.3592C2.9618 86.3146 7.14223 95.6916 13.3024 103.731C19.4626 111.77 27.4294 118.246 36.5577 122.633L48.5813 97.6185C43.3809 95.1189 38.8422 91.4297 35.3328 86.8498C31.8233 82.2698 29.4418 76.9278 28.3809 71.2562C27.32 65.5846 27.6096 59.7429 29.2263 54.2041C30.843 48.6653 33.7414 43.585 37.6866 39.3747C41.6319 35.1643 46.5133 31.9423 51.9354 29.9693C57.3576 27.9964 63.1681 27.328 68.8966 28.0184C74.6251 28.7088 80.1105 30.7385 84.9087 33.9431C89.7068 37.1478 93.6829 41.4373 96.5149 46.4644L120.696 32.8419Z"
+              fill="white" />
+          </svg>
         </div>
         <div class="element-7">
-          <svg class="straight" width="55" height="32" viewBox="0 0 55 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect y="22.3472" width="55.6001" height="9.94658" transform="rotate(-23.6989 0 22.3472)" fill="white"/>
-            </svg>
-            <svg class="round" width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2.12998 0.682491C-0.0141202 5.70435 -0.0754779 11.3723 1.9594 16.4394C3.99428 21.5065 7.95872 25.5577 12.9806 27.7018C18.0024 29.8459 23.6704 29.9072 28.7375 27.8724C33.8046 25.8375 37.8558 21.873 39.9999 16.8512L2.12998 0.682491Z" fill="#7F8CFF"/>
-            </svg>              
+          <svg class="straight" width="55" height="32" viewBox="0 0 55 32" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect y="22.3472" width="55.6001" height="9.94658" transform="rotate(-23.6989 0 22.3472)" fill="white" />
+          </svg>
+          <svg class="round" width="40" height="30" viewBox="0 0 40 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.12998 0.682491C-0.0141202 5.70435 -0.0754779 11.3723 1.9594 16.4394C3.99428 21.5065 7.95872 25.5577 12.9806 27.7018C18.0024 29.8459 23.6704 29.9072 28.7375 27.8724C33.8046 25.8375 37.8558 21.873 39.9999 16.8512L2.12998 0.682491Z"
+              fill="#7F8CFF" />
+          </svg>
         </div>
       </div>
     </section>

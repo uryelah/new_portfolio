@@ -169,6 +169,11 @@ li.nav-link.nav-expand {
   background-image: linear-gradient(to left, transparent 0%, #fff 20%, #fff 80%, transparent 100%);
 }
 
+.header-body span {
+  display: inline-block;
+  margin: 10px 0;
+}
+
 .uppercase--blue {
   color: var(--blue-light);
   font-weight: 500;
@@ -899,6 +904,10 @@ li.nav-link.nav-expand {
   min-height: 170px;
 }
 
+.section-contact form textarea:not(:focus) {
+  color: #828d9f;
+}
+
 .section-contact form [type=submit] {
   border-radius: 8px;
   color: #6070FF;
@@ -934,6 +943,11 @@ li.nav-link.nav-expand {
   background: #fff;
   z-index: 100000000;
   padding: 24px;
+}
+
+.modal-body ul {
+  list-style: disc;
+  padding-left: 20px;
 }
 
 .modal .item-desc {
