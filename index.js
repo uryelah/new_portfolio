@@ -102,6 +102,171 @@ Token-based authentication and athorizations
   live: 'https://hosting-test-29639.firebaseapp.com/',
   repo: 'https://github.com/uryelah/rails-react-capstone-project',
   },
+  depths: {
+    title: 'Circle',
+    subtitle: ['Microverse', 'Phaser3', 2020],
+    img: './imgs/03.png',
+    body: `<div class="modal-body"><p>
+    A Phaser3 game with stored score data with Leaderboard API service and original assets that let users play as a tentacle sea creature and shoot/squeeze divers. 
+    <br/>
+    <p>
+    In this project, I implemented a game with projectiles coming both from and towards the player, player sprite movement, enemy 'downward' movement, and collisions, with an oceanic theme.</p>
+    <p><strong>About the Game</strong></p>
+    <p>
+    From the depths consists of a shooter game with the twist that it happens under the sea instead of the in space.
+</p><p>
+    You control an ancient, squid-like, sea creature that has their domains invaded by humans, much to its demise.
+    </p><p>
+    The game's object is to get points from eliminating the humans and its machines, while keeping your hp, or health points, above zero.
+    </p><p>
+    All the art feature in this game is original if not indicated otherwise at the Attributions section.
+</p>
+<p><strong>Features</strong></p>
+<ul>
+<li>
+<p>
+Shoot stuff!</p>
+</li>
+<li>
+<p>
+Eat fish!</p>
+</li>
+<li>
+<p>
+Squeeze humans slowly to their death!</p>
+</li>
+<li>
+<p>
+Battle a submarine!</p>
+</li>
+<li>
+<p>Wiggle a tentacle around</p>
+</li>
+<li>
+<p>Check if your score at the top of the LeaderBoard!</p>
+</li>
+</ul>
+</div>
+`,
+  stack: ['Phaser3', 'JavaScript', 'Webpack'],
+  live: 'https://depths.web.app/',
+  repo: 'https://github.com/uryelah/from-the-depths',
+  },
+  eggo: {
+    title: 'Lo Eggo',
+    subtitle: ['Microverse', 'JavaScript', 2020],
+    img: './imgs/04.jpg',
+    body: `<div class="modal-body"><p>
+    A breakfast restaurant page with client-side which allows users to toggle between the restaurant about page, menu, and contact information.
+    <br/>
+    <p><strong>About the Project</strong></p>
+    <p>
+    This project is a dynamically rendered restaurant page. Each tab('home', 'contact', 'about', 'menu') is in its own javascript file at /src and imported to index.js to be rendered when a nav link is clicked. The adding and removing HTML from the page, as well as the entering and leaving CSS animation, are handled by the page factory methods from where each page is made.
+    </p>
+<p><strong>Features</strong></p>
+<ul>
+<li>
+<p>
+Neumorphic design</p>
+</p>
+</li>
+<li>
+<p>
+Pure CSS animation and interactions</p>
+</li>
+<li>
+<p>
+Client side pagination</p>
+</li>
+</ul>
+</div>`,
+  stack: ['JavaScript', 'Webpack'],
+  live: 'https://uryelah.github.io/Microverse-603-restaurant-page/#',
+  repo: 'https://github.com/uryelah/Microverse-603-restaurant-page',
+  },
+  tic: {
+    title: 'Tic-tac-toe',
+    subtitle: ['Ruby', 'JavaScript', 2020],
+    img: './imgs/05.png',
+    body: `<div class="modal-body"><p>
+    A ruby version of the traditional Tic Tac Toe that let's two players have matches via terminal commands. 
+    <br/>
+    <p><strong>About the Game</strong></p>
+    <p>
+    Tic-tac-toe (American English), noughts and crosses (British English), or Xs and Os is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.
+    </p>
+<p><strong>Features</strong></p>
+<ul>
+<li>
+<p>
+100% terminal game play</p>
+</p>
+</li>
+<li>
+<p>
+Score keeping</p>
+</li>
+<li>
+<p>
+Multiple rounds game</p>
+</li>
+<li>
+<p>
+Two player support
+</p>
+</li>
+</ul>
+</div>`,
+  stack: ['Ruby'],
+  repo: 'https://github.com/uryelah/tic-tac-toe-game',
+  },
+  flag: {
+    title: 'Where in the world?',
+    subtitle: ['Project', 'React', 2020],
+    img: './imgs/06.png',
+    body: `<div class="modal-body"><p>
+    This project is a simple SPA country database made with the data from REST Countries API.
+    <br/>
+    <p><strong>About the Project</strong></p>
+    <p>
+    It was made mainly with React, Material UI, and Redux, and deployed with Firebase. You can use any JavaScript framework/library on the front-end such as React.
+    </p>
+<p><strong>Features</strong></p>
+<ul>
+<li>
+<p>
+See all countries from the API on the homepage</p>
+</p>
+</li>
+<li>
+<p>
+Search for a country using an <em>input</em> field</p>
+</li>
+<li>
+<p>
+Filter countries by region</p>
+</li>
+<li>
+<p>
+Click on a country to see more detailed information on a separate page
+</p>
+</li>
+<li>
+<p>
+Click through to the border countries on the detail page
+</p>
+</li>
+<li>
+<p>
+Toggle the color scheme between light and dark mode
+</p>
+</li>
+</ul>
+</div>`,
+  stack: ['React', 'Material UI'],
+  repo: 'https://github.com/uryelah/country-flags',
+  live: 'https://countries-db.web.app/',
+  },
 };
 
 window.onload = () => {
@@ -172,9 +337,21 @@ window.onload = () => {
       modalImg.src = ProjectsContent[item.dataset.item].img;
       modalDesc.innerHTML = ProjectsContent[item.dataset.item].body;
       Array.from(modalStack.children).forEach((sub, i) => {
-        sub.innerText = ProjectsContent[item.dataset.item].stack[i];
+        sub.classList.remove('hide');
+
+        if (!ProjectsContent[item.dataset.item].stack[i]) {
+          sub.classList.add('hide');
+        } else {
+          sub.innerText = ProjectsContent[item.dataset.item].stack[i];
+        }
       });
-      modalLive.href = ProjectsContent[item.dataset.item].live;
+
+      if (ProjectsContent[item.dataset.item].live) {
+        modalLive.classList.remove('hide');
+        modalLive.href = ProjectsContent[item.dataset.item].live;
+      } else {
+        modalLive.classList.add('hide');
+      }
       modalRepo.href = ProjectsContent[item.dataset.item].repo;
       openModal();
     });
