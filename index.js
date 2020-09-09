@@ -2,7 +2,7 @@ const ProjectsContent = {
   aoKanji: {
     title: 'Ao Kanji',
     subtitle: ['Microverse', 'React', 2020],
-    img: './imgs/01.png',
+    img: './imgs/aokanji.gif',
     body: `<div class="modal-body"><p>
     A Kanji mobile-first study catalog web-app that, by consuming the Japanse kanji API, enables students to select groups of Kanji by grade or work book lists and access their readings, stroke order, and pronunciation. 
     </p>
@@ -64,7 +64,7 @@ const ProjectsContent = {
   circle: {
     title: 'Circle',
     subtitle: ['Microverse', 'Rails & React', 2020],
-    img: './imgs/02.png',
+    img: './imgs/02.jpg',
     body: `<div class="modal-body"><p>
     A mobile-first SPA Rails and React web-app for remote meetups that let users create, favorite, and browse a catalog of meetings and groups. The API was built with Rails and the client with React and Redux.     </p>
     <br/>
@@ -276,10 +276,13 @@ window.onload = () => {
   const navClose = document.getElementById('nav-close');
   const navMobile = document.getElementById('nav--mobile');
   const mobileLinks = document.getElementsByClassName('mobile-link');
+  const backBtn = document.getElementById('back');
   const main = document.getElementById('main');
   const items = document.getElementsByClassName('item');
+  const readMoreBtn = document.getElementsByClassName('more');
   const modal = document.getElementById('modal');
   const clickCatcher = document.getElementById('click-catcher');
+  const closeIco = document.getElementById('close-ico');
 
   const modalTitle = document.getElementById('modal-title');
   const modalSubtitle = document.getElementById('modal-subtitle');
@@ -290,6 +293,18 @@ window.onload = () => {
   const modalRepo = document.getElementById('modal-repo');
 
   clickCatcher.addEventListener('click', e => {
+    modal.classList.add('hide');
+    main.classList.remove('blurred');
+    clickCatcher.classList.add('hide');
+  });
+
+  backBtn.addEventListener('click', e => {
+    modal.classList.add('hide');
+    main.classList.remove('blurred');
+    clickCatcher.classList.add('hide');
+  });
+
+  closeIco.addEventListener('click', e => {
     modal.classList.add('hide');
     main.classList.remove('blurred');
     clickCatcher.classList.add('hide');
@@ -327,7 +342,7 @@ window.onload = () => {
     });
   });
 
-  Array.from(items).forEach(item => {
+  Array.from(readMoreBtn).forEach(item => {
     item.addEventListener('click', () => {
       // change content of modal
       modalTitle.innerText = ProjectsContent[item.dataset.item].title;

@@ -12,6 +12,7 @@
 
 <body>
   <div id="modal" class="modal hide">
+    <i id="close-ico" class="close-ico far fa-times-circle"></i>
     <div class="item-top">
       <h2 id="modal-title" data-item="true" class="item-title">Item title</h2>
       <ul id="modal-subtitle" data-item="true" class="item-subtitle">
@@ -21,7 +22,8 @@
       </ul>
     </div>
     <figure data-item="true" class="item-img">
-      <img id="modal-img" data-item="true" src="https://usabilla.com/blog/wp-content/uploads/2015/07/Website-Design-new.jpg" />
+      <img id="modal-img" data-item="true"
+        src="https://usabilla.com/blog/wp-content/uploads/2015/07/Website-Design-new.jpg" />
     </figure>
     <div data-item="true" class="item-desc">
       <p id="modal-desc" data-item="true" class="item-description">
@@ -33,6 +35,7 @@
         obcaecati incidunt?
       </p>
       <div class="item-side">
+        <h3 class="blue tags-title">Stack:</h3>
         <ul id="modal-stack" data-item="true" class="item-tags">
           <li data-item="true" class="tag">html</li>
           <li data-item="true" class="tag">javascript</li>
@@ -40,14 +43,20 @@
         </ul>
         <hr />
         <div class="item-links">
-          <a id="modal-live" target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn" href="https://uryelah.github.io/ao-kanji/">
+          <a id="modal-live" target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+            href="https://uryelah.github.io/ao-kanji/">
             <span>See live</span>
             <i class="fas fa-external-link-alt"></i>
           </a>
-          <a id="modal-repo" target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn" href="https://uryelah.github.io/ao-kanji/">
+          <a id="modal-repo" target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+            href="https://uryelah.github.io/ao-kanji/">
             <span>See source</span>
             <i class="fab fa-github"></i>
           </a>
+          <button id="back" type="button" class="item-btn">
+            <span>Go Back</span>
+            <i class="fas fa-chevron-circle-left"></i>
+          </button>
         </div>
       </div>
     </div>
@@ -159,25 +168,27 @@
         <main>
           <h1 class="header-title">I'm Sarah
             <br />
-            Professional Web Developer
+            The Professional Web Developer
           </h1>
           <p class="header-body">
             <span>
-              I <span class="blue">enjoy building</span> interactive interfaces with Javascript + frameworks as a certified Ruby on Rails and
-              React web developer.
+              I'm a certified web developer who <span class="blue">enjoys building</span> interactive interfaces with
+              Javascript, Ruby on Rails, and React.
             </span>
             <span>
-              I’m also a Technical Support Engineer and mentor at Microverse, and freelancing as a full-stack
-              developer building solutions for medium-sized businesses using <span class="blue">ReactJS and Firebase</span>.
+              I’m also a Technical Support Engineer, a mentor at Microverse, and a freelance full-stack
+              developer building solutions for medium-sized businesses using <span class="blue">ReactJS and
+                Firebase</span>.
             </span>
             <span>
-              I'm exploring front-end remote opportunities with
-              digital-product teams whilst I’m currently completing a <span class="blue">degree in Computer Science</span>
+              I'm open to front-end remote opportunities with
+              digital-product teams whilst I’m currently completing a <span class="blue">degree in Computer
+                Science.</span>
             </span>
           </p>
         </main>
         <aside>
-          <a href="#portfolio" class="item-btn">
+          <a href="#portfolio" class="item-btn view">
             View my projects
           </a>
           <p class="uppercase--blue">Let's connect</p>
@@ -215,96 +226,154 @@
     <section id="portfolio" class="section section--vertical section--transparent">
       <h2 class="item-title section-title">My Projects</h2>
       <article id="project-1" data-item="aoKanji" class="item">
-        <figure data-item="aoKanji" class="item-img">
-          <img data-item="aoKanji" src="./imgs/01.png" />
+        <figure data-item="aoKanji" class="item-img item-img--center">
+          <img data-item="aoKanji" src="./imgs/aokanji.gif" />
         </figure>
         <div data-item="aoKanji" class="item-desc">
           <h2 data-item="aoKanji" class="item-title">Ao Kanji</h2>
           <ul data-item="aoKanji" class="item-subtitle">
             <li data-item="aoKanji">Microverse</li>
-            <li data-item="aoKanji" class="blue">React</li>
             <li data-item="aoKanji">2020</li>
           </ul>
           <p data-item="aoKanji" class="item-description">
-            A Kanji mobile-first study catalog web-app that, by consuming the Japanse kanji API, enables students to select groups of Kanji by grade or work book lists and access their readings, stroke order, and pronunciation. 
+            A Kanji mobile-first study catalog web-app that, by consuming the Japanse kanji API, enables students to
+            select groups of Kanji by grade or work book lists and access their readings, stroke order, and
+            pronunciation.
           </p>
+          <h3 class="blue tags-title">Stack:</h3>
           <ul data-item="aoKanji" class="item-tags">
             <li data-item="aoKanji" class="tag">React</li>
             <li data-item="aoKanji" class="tag">Redux</li>
             <li data-item="aoKanji" class="tag">Webpack</li>
           </ul>
-          <a target="_blank" rel="noopener noreferrer" data-item="aoKanji" class="item-btn" href="https://uryelah.github.io/ao-kanji/">
-            See Project
-          </a>
+          <div class="row">
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://uryelah.github.io/ao-kanji/">
+              <span>See live</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://github.com/uryelah/ao-kanji">
+              <span>See source</span>
+              <i class="fab fa-github"></i>
+            </a>
+            <button type="button" class="item-btn more" data-item="aoKanji">
+              <span data-item="aoKanji">Read more</span>
+              <i data-item="aoKanji" class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
         </div>
       </article>
       <article id="project-2" data-item="circle" class="item">
         <figure data-item="circle" class="item-img">
-          <img data-item="circle" src="./imgs/02.png" />
+          <img data-item="circle" src="./imgs/02.jpg" />
         </figure>
         <div data-item="circle" class="item-desc">
           <h2 data-item="circle" class="item-title">Circle</h2>
           <ul data-item="circle" class="item-subtitle">
             <li data-item="circle">Microverse</li>
-            <li data-item="circle" class="blue">Rails & React</li>
             <li data-item="circle">2020</li>
           </ul>
           <p data-item="circle" class="item-description">
-            A mobile-first SPA Rails and React web-app for remote meetups that let users create, favorite, and browse a catalog of meetings and groups. The API was built with Rails and the client with React and Redux.           </p>
+            A mobile-first SPA Rails and React web-app for remote meetups that let users create, favorite, and browse a
+            catalog of meetings and groups. The API was built with Rails and the client with React and Redux. </p>
+          
+          <h3 class="blue tags-title">Stack:</h3>
           <ul data-item="circle" class="item-tags">
             <li data-item="circle" class="tag">Rails</li>
             <li data-item="circle" class="tag">React</li>
             <li data-item="circle" class="tag">Redux</li>
           </ul>
-          <a target="_blank" rel="noopener noreferrer" data-item="circle" class="item-btn" href="https://hosting-test-29639.firebaseapp.com/">
-            See Project
-          </a>
+          <div class="row">
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://hosting-test-29639.firebaseapp.com/">
+              <span>See live</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://github.com/uryelah/rails-react-capstone-project">
+              <span>See source</span>
+              <i class="fab fa-github"></i>
+            </a>
+            <button type="button" class="item-btn more" data-item="circle">
+              <span data-item="circle">Read more</span>
+              <i data-item="circle" class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
         </div>
       </article>
       <article id="project-3" data-item="depths" class="item">
-        <figure data-item="depths" class="item-img">
+        <figure data-item="depths" class="item-img item-img--center">
           <img data-item="depths" src="./imgs/03.png" />
         </figure>
         <div data-item="depths" class="item-desc">
           <h2 data-item="depths" class="item-title">From the Depths</h2>
           <ul data-item="depths" class="item-subtitle">
             <li data-item="depths">Microverse</li>
-            <li data-item="depths" class="blue">Phaser3</li>
             <li data-item="depths">2020</li>
           </ul>
           <p data-item="depths" class="item-description">
-            A Phaser3 game with stored score data with Leaderboard API service and original assets that let users play as a tentacle sea creature and shoot/squeeze divers.          </p>
+            A Phaser3 game with stored score data with Leaderboard API service and original assets that let users play
+            as a tentacle sea creature and shoot/squeeze divers. </p>
+          <h3 class="blue tags-title">Stack:</h3>
           <ul data-item="depths" class="item-tags">
             <li data-item="depths" class="tag">Phaser3</li>
             <li data-item="depths" class="tag">JavaScript</li>
             <li data-item="depths" class="tag">Webpack</li>
           </ul>
-          <a target="_blank" rel="noopener noreferrer" data-item="depths" class="item-btn" href="https://depths.web.app/">
-            See Project
-          </a>
+          <div class="row">
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://depths.web.app/">
+              <span>See live</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://github.com/uryelah/from-the-depths">
+              <span>See source</span>
+              <i class="fab fa-github"></i>
+            </a>
+            <button type="button" class="item-btn more" data-item="depths">
+              <span data-item="depths">Read more</span>
+              <i data-item="depths" class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
         </div>
       </article>
       <article id="project-4" data-item="eggo" class="item">
         <figure data-item="eggo" class="item-img">
-          <img data-item="eggo" src="./imgs/04.jpg" />
+          <img data-item="eggo" src="./imgs/eggo.gif" />
         </figure>
         <div data-item="eggo" class="item-desc">
           <h2 data-item="eggo" class="item-title">Lo Eggo</h2>
           <ul data-item="eggo" class="item-subtitle">
             <li data-item="eggo">Microverse</li>
-            <li data-item="eggo" class="blue">JavaScript</li>
             <li data-item="eggo">2020</li>
           </ul>
           <p data-item="eggo" class="item-description">
-            A breakfast restaurant page with client-side which allows users to toggle between the restaurant about page, menu, and contact information. 
+            A breakfast restaurant page with client-side which allows users to toggle between the restaurant about page,
+            menu, and contact information.
           </p>
+          <h3 class="blue tags-title">Stack:</h3>
           <ul data-item="eggo" class="item-tags">
             <li data-item="eggo" class="tag">JavaScript</li>
             <li data-item="eggo" class="tag">Webpack</li>
           </ul>
-          <a target="_blank" rel="noopener noreferrer" data-item="eggo" class="item-btn" href="https://uryelah.github.io/Microverse-603-restaurant-page/#">
-            See Project
-          </a>
+          <div class="row">
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://uryelah.github.io/Microverse-603-restaurant-page/#">
+              <span>See live</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://github.com/uryelah/Microverse-603-restaurant-page">
+              <span>See source</span>
+              <i class="fab fa-github"></i>
+            </a>
+            <button type="button" class="item-btn more" data-item="eggo">
+              <span data-item="eggo">Read more</span>
+              <i data-item="eggo" class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
         </div>
       </article>
       <article id="project-5" data-item="tic" class="item">
@@ -315,18 +384,26 @@
           <h2 data-item="tic" class="item-title">Tic-tac-toe</h2>
           <ul data-item="tic" class="item-subtitle">
             <li data-item="tic">Ruby</li>
-            <li data-item="tic" class="blue">React</li>
             <li data-item="tic">2020</li>
           </ul>
           <p data-item="tic" class="item-description">
-            A ruby version of the traditional Tic Tac Toe that let's two players have matches via terminal commands. 
+            A ruby version of the traditional Tic Tac Toe that let's two players have matches via terminal commands.
           </p>
+          <h3 class="blue tags-title">Stack:</h3>
           <ul data-item="tic" class="item-tags">
             <li data-item="tic" class="tag">Ruby</li>
           </ul>
-          <a target="_blank" rel="noopener noreferrer" data-item="tic" class="item-btn" href="https://github.com/uryelah/tic-tac-toe-game">
-            See Project
-          </a>
+          <div class="row">
+            <a target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://github.com/uryelah/tic-tac-toe-game">
+              <span>See source</span>
+              <i class="fab fa-github"></i>
+            </a>
+            <button type="button" class="item-btn more" data-item="tic">
+              <span data-item="tic">Read more</span>
+              <i data-item="tic" class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
         </div>
       </article>
       <article id="project-6" data-item="flag" class="item">
@@ -337,19 +414,33 @@
           <h2 data-item="flag" class="item-title">Where in the world?</h2>
           <ul data-item="flag" class="item-subtitle">
             <li data-item="flag">Microverse</li>
-            <li data-item="flag" class="blue">React</li>
             <li data-item="flag">2020</li>
           </ul>
           <p data-item="flag" class="item-description">
-            A responsive country catalog app with restcountries.eu data, and a togglable dark UI theme. It allows users to search countries by their code, name, and browse countries bordering the currently selected country. 
+            A responsive country catalog app with restcountries.eu data, and a togglable dark UI theme. It allows users
+            to search countries by their code, name, and browse countries bordering the currently selected country.
           </p>
+          <h3 class="blue tags-title">Stack:</h3>
           <ul data-item="flag" class="item-tags">
             <li data-item="flag" class="tag">React</li>
             <li data-item="flag" class="tag">Material UI</li>
           </ul>
-          <a target="_blank" rel="noopener noreferrer" data-item="flag" class="item-btn" href="https://countries-db.web.app/">
-            See Project
-          </a>
+          <div class="row">
+            <a id="modal-live" target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://countries-db.web.app/">
+              <span>See live</span>
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+            <a id="modal-repo" target="_blank" rel="noopener noreferrer" data-item="true" class="item-btn"
+              href="https://github.com/uryelah/country-flags">
+              <span>See source</span>
+              <i class="fab fa-github"></i>
+            </a>
+            <button type="button" class="item-btn more" data-item="flag">
+              <span data-item="flag">Read more</span>
+              <i data-item="flag" class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
         </div>
       </article>
     </section>
@@ -358,13 +449,15 @@
         <div class="about-description">
           <h2>About Myself</h2>
           <p>
-            I'm a certified full-stack developer (@Microverse) with a B.A. in Design and experience in UX and Customer Success.
+            I'm a certified full-stack developer (@Microverse) with a B.A. in Design and experience in UX and Customer
+            Success.
             Currently continuing my Computer Science education (@Cruziero do Sul Virtual).
-            <br/>
-            <br/>
-            I have a passion for problem-solving, and a knack for debugging, and love to learn new tools and technologies.
-            <br/>
-            </p>
+            <br />
+            <br />
+            I have a passion for problem-solving, and a knack for debugging, and love to learn new tools and
+            technologies.
+            <br />
+          </p>
           <aside>
             <p class="uppercase--blue">Let's connect</p>
             <ul class="social-links">
@@ -395,7 +488,9 @@
                 </a>
               </li>
             </ul>
-            <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/1Kw8gHHLybQsuuwY2n4BATHhianJe_OkjNmsrm1lEhis/edit?usp=sharing" class="item-btn">
+            <a target="_blank" rel="noopener noreferrer"
+              href="https://docs.google.com/document/d/1Kw8gHHLybQsuuwY2n4BATHhianJe_OkjNmsrm1lEhis/edit?usp=sharing"
+              class="item-btn">
               Get My Resume
             </a>
           </aside>
@@ -416,15 +511,20 @@
               <p>JavaScript</p>
             </div>
             <div class="content-item">
-              <img src="https://icons-for-free.com/iconfiles/png/512/icon++html+icon-1320194800994962643.png" class="content-icon" />
+              <img src="https://icons-for-free.com/iconfiles/png/512/icon++html+icon-1320194800994962643.png"
+                class="content-icon" />
               <p>HTML5</p>
             </div>
             <div class="content-item">
-              <img src="https://i0.wp.com/www.tutorialwebdesign.com.br/wp-content/uploads/2015/07/css3.jpg?fit=250%2C237" class="content-icon" />
+              <img
+                src="https://i0.wp.com/www.tutorialwebdesign.com.br/wp-content/uploads/2015/07/css3.jpg?fit=250%2C237"
+                class="content-icon" />
               <p>CSS3</p>
             </div>
             <div class="content-item">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSZc936X7NVC1GjyOg5tvp_8lJYSLNv2pLpNw&usqp=CAU" class="content-icon" />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSZc936X7NVC1GjyOg5tvp_8lJYSLNv2pLpNw&usqp=CAU"
+                class="content-icon" />
               <p>Ruby</p>
             </div>
           </div>
@@ -438,7 +538,8 @@
               <p>React</p>
             </div>
             <div class="content-item">
-              <img src="https://p.kindpng.com/picc/s/25-255448_ruby-on-rails-logo-graphic-design-hd-png.png" class="content-icon" />
+              <img src="https://p.kindpng.com/picc/s/25-255448_ruby-on-rails-logo-graphic-design-hd-png.png"
+                class="content-icon" />
               <p>Rails</p>
             </div>
             <div class="content-item">
@@ -446,7 +547,9 @@
               <p>Firebase</p>
             </div>
             <div class="content-item">
-              <img src="https://w7.pngwing.com/pngs/780/57/png-transparent-node-js-javascript-database-mongodb-native-miscellaneous-text-trademark.png" class="content-icon" />
+              <img
+                src="https://w7.pngwing.com/pngs/780/57/png-transparent-node-js-javascript-database-mongodb-native-miscellaneous-text-trademark.png"
+                class="content-icon" />
               <p>NodeJs</p>
             </div>
           </div>
@@ -456,7 +559,9 @@
           <i class="arrow fas fa-chevron-right"></i>
           <div class="content">
             <div class="content-item">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQi5Xoq9eSa90UxHOOk1Y2xuzRPJ8BeX8CPRg&usqp=CAU" class="content-icon" />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQi5Xoq9eSa90UxHOOk1Y2xuzRPJ8BeX8CPRg&usqp=CAU"
+                class="content-icon" />
               <p>Git</p>
             </div>
             <div class="content-item">
@@ -464,7 +569,9 @@
               <p>Webpack</p>
             </div>
             <div class="content-item">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRcapC8q1mMPefb3NUdQu7Q4Jhg1xllu5gqkg&usqp=CAU" class="content-icon" />
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRcapC8q1mMPefb3NUdQu7Q4Jhg1xllu5gqkg&usqp=CAU"
+                class="content-icon" />
               <p>Jest</p>
             </div>
             <div class="content-item">
