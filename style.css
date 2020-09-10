@@ -171,6 +171,12 @@ li.nav-link.nav-expand {
   letter-spacing: 0.37px;
   margin-bottom: 20px;
   filter: drop-shadow(0 0 10px #fff);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.full {
+  width: 100%;
 }
 
 .header-body {
@@ -1202,6 +1208,11 @@ li.nav-link.nav-expand {
   margin-bottom: 20px;
 }
 
+.professional, .the {
+  display: inline-block;
+  margin-right: 0.75rem;
+}
+
 @media only screen and (max-width: 379px) {
   .modal .item-side {
     max-height: 220px !important;
@@ -1209,6 +1220,10 @@ li.nav-link.nav-expand {
 }
 
 @media only screen and (max-width: 528px) {
+  .professional {
+    display: none;
+  }
+
   .row {
     flex-direction: column;
   }
